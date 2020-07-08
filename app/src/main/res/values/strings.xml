@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">SesionROOM</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="create">Create</string>
+    <string name="nombre">Digite Nombre</string>
+    <string name="telefono">Digite su numero de telefono</string>
+    <string name="cantidad">Digite cantidad</string>
+    <string name="guardar">Guardar</string>
+    <string name="read">Read</string>
+    <string name="buscar_nombre">Digite Nombre</string>
+    <string name="buscar_botom">Buscar</string>
+    <string name="title_update">Update</string>
+    <string name="actualizar">Actualizar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="eliminar_botom">Eliminar</string>
+    <string name="title_delete">delete</string>
+    <string name="title_list">List</string>
+    <string name="deudor_list">Nombre Deudor</string>
+    <string name="deuda_list">Deuda</string>
+    <string name="ingrese_usuario">Ingrese Correo</string>
+    <string name="introducir_contrasena">Ingrese Contraseña</string>
+    <string name="ingreso">Ingreso</string>
+    <string name="pasararegister">Registro</string>
+    <string name="passregister">Registro</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="repita_contrasena">Repita Contraseña</string>
+    <string name="ciudad">Ciudad de Nacimiento</string>
+    <string name="dfgdfg">hfghfgh</string>
+    <string name="textSplash">SPLASH</string>
+    <string-array name="lista_ciudades">
+        <item>Medellin</item>
+        <item>Bogota</item>
+        <item>Cali</item>
+        <item>Barranquilla</item>
+    </string-array>
+</resources>
