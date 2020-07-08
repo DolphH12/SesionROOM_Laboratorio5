@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".LoginActivity">
+
+        <EditText
+            android:id="@+id/te_usuario"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/ingrese_usuario"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/te_contrasena"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="@string/introducir_contrasena"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/te_usuario" />
+
+        <Button
+            android:id="@+id/bt_ingresar"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="cursive"
+            android:shadowColor="@android:color/background_dark"
+            android:text="@string/ingreso"
+            android:textColor="@android:color/background_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/te_contrasena" />
+
+        <Button
+            android:id="@+id/bt_passregister"
+            android:layout_width="177dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="516dp"
+            android:fontFamily="cursive"
+            android:text="@string/passregister"
+            android:textColor="@android:color/background_dark"
+            android:textColorLink="@android:color/background_dark"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

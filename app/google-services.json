@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1050739384816",
+    "firebase_url": "https://sesionroom-7bcec.firebaseio.com",
+    "project_id": "sesionroom-7bcec",
+    "storage_bucket": "sesionroom-7bcec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050739384816:android:97a467975674cf149dfd35",
+        "android_client_info": {
+          "package_name": "com.dolphhincapie.sesionroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050739384816-sm7c2guqqgls8nbv536o3rujbkb7sq14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPaZVzOqb_EYEpKXqHzzzpFqKWVdyrDVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050739384816-sm7c2guqqgls8nbv536o3rujbkb7sq14.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
