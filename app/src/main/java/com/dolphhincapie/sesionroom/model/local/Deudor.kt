@@ -1,4 +1,4 @@
-package com.dolphhincapie.sesionroom.model
+package com.dolphhincapie.sesionroom.model.local
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

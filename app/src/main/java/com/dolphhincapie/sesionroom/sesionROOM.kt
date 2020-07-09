@@ -2,7 +2,8 @@ package com.dolphhincapie.sesionroom
 
 import android.app.Application
 import androidx.room.Room
-import com.dolphhincapie.sesionroom.model.DeudorDataBase
+import com.dolphhincapie.sesionroom.model.local.DeudorDataBase
+
 import com.dolphhincapie.sesionroom.model2.UserDataBase
 
 class sesionROOM : Application() {

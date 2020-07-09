@@ -1,12 +1,15 @@
 package com.dolphhincapie.sesionroom
 
-import android.app.Activity
+import android.R.attr.password
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentActivity
 import com.dolphhincapie.sesionroom.model2.User
 import com.dolphhincapie.sesionroom.model2.UserDAO
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_register.*
 import java.sql.Types.NULL
 
@@ -17,6 +20,7 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
+        val mAuth: FirebaseAuth = FirebaseAuth.getInstance()
 
         bt_guardar.setOnClickListener {
             val nombre = et_nombre.text.toString()
@@ -43,15 +47,28 @@ class RegisterActivity : AppCompatActivity() {
             }
             else {
                 if (contrasena == repContra){
-                    val user = User(NULL, nombre, correo, contrasena, ciudadNacimiento)
 
-                    val userDAO : UserDAO = sesionROOM.dataBase2.UserDAO()
+                    mAuth.createUserWithEmailAndPassword(correo, contrasena)
+                        .addOnCompleteListener(
+                            this
+                        ) { task ->
+                            if (task.isSuccessful) {
+//                                crearUsuarioeEnBaseDeDatos()
+                                Toast.makeText(
+                                    this, "Registro Exítoso",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                onBackPressed()
+                            } else {
+                                Toast.makeText(
+                                    this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                                Log.w("TAG", "signInWithEmail:failure", task.getException());
+                            }
 
-                    userDAO.crearUsuario(user)
-
-                    val intent = Intent(this, LoginActivity::class.java)
-                    startActivity(intent)
-                    finish()
+                            // ...
+                        }
 
                 }
                 else{
@@ -64,4 +81,8 @@ class RegisterActivity : AppCompatActivity() {
         }
 
     }
+
+/*    private fun crearUsuarioeEnBaseDeDatos() {
+        TODO("Not yet implemented")
+    }*/
 }

@@ -1,4 +1,4 @@
-package com.dolphhincapie.sesionroom.model
+package com.dolphhincapie.sesionroom.model.local
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -15,7 +15,10 @@ class DeudoresRVAdapter (
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DeudoresViewHolder {
         val itemView = LayoutInflater.from(context).inflate(R.layout.item_deudor, parent, false)
-        return DeudoresViewHolder(itemView, context)
+        return DeudoresViewHolder(
+            itemView,
+            context
+        )
     }
 
     override fun getItemCount(): Int = deudoresList.size

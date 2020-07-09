@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dolphhincapie.sesionroom.R
-import com.dolphhincapie.sesionroom.model.Deudor
-import com.dolphhincapie.sesionroom.model.DeudorDAO
-import com.dolphhincapie.sesionroom.model.DeudoresRVAdapter
+import com.dolphhincapie.sesionroom.model.local.Deudor
+import com.dolphhincapie.sesionroom.model.local.DeudorDAO
+import com.dolphhincapie.sesionroom.model.local.DeudoresRVAdapter
 import com.dolphhincapie.sesionroom.sesionROOM
 
 
