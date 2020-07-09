@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "140725877877",
+    "firebase_url": "https://kkkkk-f270a.firebaseio.com",
+    "project_id": "kkkkk-f270a",
+    "storage_bucket": "kkkkk-f270a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140725877877:android:75709d7ccbe202b21acc3c",
+        "android_client_info": {
+          "package_name": "com.dolphhincapie.sesionroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140725877877-7pj8pjmj5rru6pepuk29691333n4u1a8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEU-YL0dgxjHg9kP5egDp_GuEX0VXEJlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140725877877-7pj8pjmj5rru6pepuk29691333n4u1a8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
