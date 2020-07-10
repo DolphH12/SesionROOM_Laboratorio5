@@ -1,10 +1,9 @@
 package com.dolphhincapie.sesionroom
 
-import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.dolphhincapie.sesionroom.model2.User
 import com.dolphhincapie.sesionroom.model2.UserDAO
 import kotlinx.android.synthetic.main.activity_register.*
@@ -53,8 +52,7 @@ class RegisterActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()
 
-                }
-                else{
+                } else {
                     et_contrasena.error
                     et_repitacontrasena.error
                     Toast.makeText(this, "Contraseñas diferentes", Toast.LENGTH_LONG).show()
@@ -64,4 +62,10 @@ class RegisterActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this, LoginActivity::class.java))
+    }
+
 }
