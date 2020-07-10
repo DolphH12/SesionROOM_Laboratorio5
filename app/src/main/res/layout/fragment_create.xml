@@ -4,8 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="30dp"
     android:orientation="vertical"
     tools:context=".ui.create.CreateFragment">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rattman_m"
+        android:text="@string/crear_deudor"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamano_two" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -15,6 +27,7 @@
             android:id="@+id/et_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:hint="@string/nombre" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -26,6 +39,7 @@
             android:id="@+id/et_telefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:hint="@string/telefono"
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -38,6 +52,7 @@
             android:id="@+id/et_cantidad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:hint="@string/cantidad"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -46,7 +61,8 @@
         android:id="@+id/bt_guardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:layout_margin="30dp"
+        android:background="@color/goldenrod"
         android:text="@string/guardar"
-        android:textColor="@color/design_default_color_background" />
+        android:textColor="@color/black" />
 </LinearLayout>

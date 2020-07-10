@@ -35,7 +35,7 @@ class ReadFragment : Fragment() {
 
             if (deudor != null){
                 tv_resultado.text =
-                    "Nombre: ${deudor.nombre}\n"+
+                    "\n\nNombre: ${deudor.nombre}\n"+
                             "Telefono: ${deudor.telefono}\n"+
                             "Cantidad: ${deudor.cantidad}"
             }else{

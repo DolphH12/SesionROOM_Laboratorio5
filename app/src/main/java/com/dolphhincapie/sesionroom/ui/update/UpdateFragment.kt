@@ -10,7 +10,9 @@ import com.dolphhincapie.sesionroom.R
 import com.dolphhincapie.sesionroom.model.Deudor
 import com.dolphhincapie.sesionroom.model.DeudorDAO
 import com.dolphhincapie.sesionroom.sesionROOM
+import kotlinx.android.synthetic.main.fragment_read.*
 import kotlinx.android.synthetic.main.fragment_update.*
+import kotlinx.android.synthetic.main.fragment_update.et_nombre
 
 class UpdateFragment : Fragment() {
 
@@ -19,7 +21,6 @@ class UpdateFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         val root = inflater.inflate(R.layout.fragment_update, container, false)
         return root
     }

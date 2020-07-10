@@ -4,12 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="30dp"
     android:orientation="vertical"
     tools:context=".ui.read.ReadFragment">
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rattman_m"
+        android:text="@string/buscar_deudor"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamano_two" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_nombre"
@@ -23,12 +36,16 @@
         android:id="@+id/bt_buscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@color/goldenrod"
         android:text="@string/buscar_botom" />
 
     <TextView
         android:id="@+id/tv_resultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
         android:textSize="18sp" />
 
 </LinearLayout>

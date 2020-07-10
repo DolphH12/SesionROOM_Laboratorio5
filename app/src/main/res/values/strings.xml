@@ -31,7 +31,15 @@
     <string name="repita_contrasena">Repita Contraseña</string>
     <string name="ciudad">Ciudad de Nacimiento</string>
     <string name="dfgdfg">hfghfgh</string>
-    <string name="textSplash">SPLASH</string>
+    <string name="textSplash">Deudores</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
+    <string name="title_deudoreslogin">Deudores\n Login</string>
+    <string name="regisro_title">Registro</string>
+    <string name="crear_deudor">Crear Deudor</string>
+    <string name="eliminar_deudor">Eliminar Deudor</string>
+    <string name="buscar_deudor">Buscar Deudor</string>
+    <string name="actializar_deudor">Actualizar Deudor</string>
+    <string name="lista_deudores">Lista Deudores</string>
     <string-array name="lista_ciudades">
         <item>Medellin</item>
         <item>Bogota</item>

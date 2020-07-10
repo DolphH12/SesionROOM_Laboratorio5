@@ -3,20 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/gold">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="20dp"
         android:orientation="vertical"
         tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:fontFamily="@font/rattman_m"
+            android:text="@string/regisro_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/splash_tamano" />
 
         <EditText
             android:id="@+id/et_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:ems="10"
             android:hint="@string/nombre"
             android:importantForAutofill="no"
@@ -27,6 +40,7 @@
             android:id="@+id/et_correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:ems="10"
             android:hint="@string/correo_electronico"
             android:inputType="textEmailAddress"
@@ -36,6 +50,7 @@
             android:id="@+id/et_contrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:ems="10"
             android:hint="@string/contrasena"
             android:inputType="textPassword"
@@ -45,6 +60,7 @@
             android:id="@+id/et_repitacontrasena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:ems="10"
             android:hint="@string/repita_contrasena"
             android:inputType="textPassword"
@@ -54,6 +70,9 @@
             android:id="@+id/tv_ciudad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
             android:text="@string/ciudad"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
@@ -62,7 +81,12 @@
             android:id="@+id/s_ciudades"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="@color/darkgoldenrod"
+            android:backgroundTintMode="multiply"
             android:dropDownWidth="wrap_content"
             android:entries="@array/lista_ciudades"
             android:scrollbarSize="5dp"
@@ -72,7 +96,8 @@
             android:id="@+id/bt_guardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="50dp"
+            android:background="@color/darkgoldenrod"
             android:text="@string/guardar"
             android:textAllCaps="true"
             android:textColor="@android:color/background_dark" />
