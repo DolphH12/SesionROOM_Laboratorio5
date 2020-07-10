@@ -7,6 +7,12 @@
     android:orientation="vertical"
     tools:context=".ui.create.CreateFragment">
 
+    <ImageView
+        android:id="@+id/iv_foto"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:src="@android:drawable/ic_menu_camera" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
