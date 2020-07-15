@@ -32,10 +32,12 @@
     <string name="ciudad">Ciudad de Nacimiento</string>
     <string name="dfgdfg">hfghfgh</string>
     <string name="textSplash">SPLASH</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
     <string-array name="lista_ciudades">
         <item>Medellin</item>
         <item>Bogota</item>
         <item>Cali</item>
         <item>Barranquilla</item>
     </string-array>
+    <string name="facebook_app_id">1156300034746434</string>
 </resources>
